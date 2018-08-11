@@ -1,0 +1,34 @@
+<%= form_with(model: detail, local: true) do |form| %>
+  <% if detail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(detail.errors.count, "error") %> prohibited this detail from being saved:</h2>
+
+      <ul>
+      <% detail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+<div class="container">
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :detail_title , class: "form-control" %>
+  </div>
+<br />
+
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_area :body, id: :detail_body , class: "form-control"%>
+  </div>
+
+<br />
+  <div class="actions text-center">
+    <%= form.submit :submit , class: "btn btn-primary " %>
+  </div>
+<% end %>
+
+</div>

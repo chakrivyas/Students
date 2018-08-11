@@ -1,0 +1,61 @@
+<div class="container">
+<div class="table-responsive" %>
+<table class="table table-striped">
+
+
+<thead>
+<tr>
+
+  <td> Name</td>
+  <td> Mobilenumber </td>
+  <td> AdhaarNumber </td>
+  <td> Pincode </td>
+  <td>MartiaStatus </td>
+  <td> Languages </td>
+</thead>
+
+<tbody>
+
+ <% @users.each do |f| %>
+
+<tr>
+   <td><%= f.name %> </td>
+   <td><%= f.mobilenumber %> </td>
+   <td><%= f.adhaarnumber %> </td>
+   <td><%= f.pincode %> </td>
+   <td><%= f.martialstatus %></td>
+   <td><%= f.languages %></td>
+   <td><%= image_tag f.image , width: '50' %>
+   <td><%= link_to 'show', user_path(f) %> </td>
+   <td><%= link_to 'edit', edit_user_path(f) %></td>
+   <td><%= link_to 'delete', f , method: :delete , data: {confirm: "Are you sure "} %> </td>
+
+ </tr>
+
+<% end %>
+
+
+</tbody>
+</table>
+
+<%= link_to_next_page @users, 'Next Page' %>
+
+<%= page_entries_info  @users %>
+
+<br />
+
+<%= link_to 'new' , new_user_path , class: "btn btn-info" %>
+
+</div>
+</div>
+
+
+<div class="container">
+
+
+<%= image_tag("chakri.jpg", width: 300) %>
+
+
+
+
+</div>

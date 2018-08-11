@@ -1,0 +1,145 @@
+ <div class="container">
+
+
+<%= form_for(user) do |f| %>
+
+<div class="container">
+<div class="form-group">
+<div class="field">
+<%= f.label :name  %>
+<%= f.text_field :name , class: "form-control"  %>
+</div>
+</div>
+</div>
+
+
+
+<div class="container">
+<div class="form-group">
+<div class="field">
+<%= f.label :password  %>
+<%= f.password_field :password , class: "form-control"  %>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="container">
+<div class="form-group">
+<div class="field">
+<%= f.label :confirmpassword  %>
+<%= f.password_field :confirmpassword , class: "form-control"  %>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="form-group">
+<div class="field">
+<%= f.label :confirmpassword  %>
+<%= f.password_field :confirmpassword , class: "form-control"  %>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="container">
+<div class="form-group">
+<div class="field">
+<%=  f.label :mobilenumber %>
+<%=  f.text_field :mobilenumber , class: "form-control" %>
+
+</div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="form-group">
+<div class="field">
+<%=  f.label :adhaarnumber %>
+<%=  f.text_field :adhaarnumber , class: "form-control" %>
+
+</div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="form-group">
+<div class="field">
+<%=  f.label :pincode %>
+<%=  f.text_field :pincode , class: "form-control" %>
+
+</div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="form-group">
+<div class="field">
+<%=  f.label :martialstatus %>
+<%=  f.text_field :martialstatus , class: "form-control"%>
+
+</div>
+</div>
+</div>
+
+
+
+<div class="container">
+<div class="form-group">
+<div class="field">
+<%=  f.label :languages %>
+<%=  f.text_field :languages , class: "form-control"%>
+
+</div>
+</div>
+</div>
+
+
+
+
+<div class="container">
+<div class="form-group">
+<div class="field">
+<%=  f.label :image %>
+<%=  f.file_field :image %>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="container">
+<div class="form-group">
+<div class="field">
+<%=  f.submit :submit , class: "btn btn-primary btn-lg" %>
+
+</div>
+</div>
+</div>
+<% end %>
+
+<%= link_to 'indexpage' , users_path , class: " btn btn-info" %>
+
+
+
+
+
+</div>

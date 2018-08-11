@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @student.name %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @student.password %>
+</p>
+
+<p>
+  <strong>Confirmpassword:</strong>
+  <%= @student.confirmpassword %>
+</p>
+
+<p>
+  <strong>Mobilenumber:</strong>
+  <%= @student.mobilenumber %>
+</p>
+
+<p>
+  <strong>Adhaarnumber:</strong>
+  <%= @student.adhaarnumber %>
+</p>
+
+<p>
+  <strong>Pincode:</strong>
+  <%= @student.pincode %>
+</p>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>

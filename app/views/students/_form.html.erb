@@ -1,0 +1,116 @@
+
+<%= form_with(model: student, local: true) do |form| %>
+  <% if student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(student.errors.count, "error") %> prohibited this student from being saved:</h2>
+
+      <ul>
+      <% student.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+<div class="container ">
+<div class="form-group ">
+<div class="field">
+
+      <div class="row">
+
+                   <div class="col-sm-1">
+                      <%= form.label :name  %>
+                   </div>
+
+                    <div class="col-sm-4">
+
+                      <%= form.text_field :name,placeholder: "Please enter your name  ",  id: :student_name , class: "form-control " %>
+
+                   </div>
+      </div>
+
+
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="form-group">
+<div class="field">
+
+      <div class="row">
+
+          <div class="col-sm-1">
+
+                <%= form.label :password %>
+
+          </div>
+
+          <div class="col-sm-4">
+
+              <%= form.text_field :password, id: :student_password  , class: "form-control" %>
+          </div>
+
+      </div>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="form-group">
+
+  <div class="field">
+    <%= form.label :confirmpassword %>
+    <%= form.text_field :confirmpassword, id: :student_confirmpassword , class: "form-control" %>
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="container">
+<div class="form-group">
+
+
+
+  <div class="field">
+    <%= form.label :mobilenumber %>
+    <%= form.text_field :mobilenumber, id: :student_mobilenumber , class: "form-control" %>
+  </div>
+
+</div>
+</div>
+
+
+<div class="container">
+<div class="form-group ">
+  <div class="field">
+    <%= form.label :adhaarnumber %>
+    <%= form.text_field :adhaarnumber, id: :student_adhaarnumber , class: "form-control" %>
+  </div>
+</div>
+</div>
+
+<div class="container">
+<div class="form-group">
+
+  <div class="field">
+    <%= form.label :pincode %>
+    <%= form.text_field :pincode, id: :student_pincode  , class: "form-control" , disabled: true %>
+  </div>
+
+</div>
+
+<div class="container">
+<div class="form-group">
+  <div class="actions text-center">
+    <%= form.submit :submit , class: "btn btn-primary btn-lg"%>
+  </div>
+</div>
+</div>
+
+<% end %>
+</div>

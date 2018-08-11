@@ -1,0 +1,8 @@
+{
+  "name": "bootjs",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "coffeescript": "^2.3.1"
+  }
+}
