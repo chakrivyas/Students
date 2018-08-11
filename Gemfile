@@ -17,7 +17,7 @@ gem 'mini_magick', '~> 4.8'
 # bcoz in heroku we cant store images in heroku
 gem 'carrierwave-aws', '~> 1.3'
 # installing .env for securing credentials
-gem 'dotenv', '~> 2.5'
+gem 'dotenv-rails', '~> 2.5'
 # gritter to  show  flash messages in other stylesheets
 gem 'gritter', '~> 1.2'
 # friendy_id for urls with out showing id
@@ -38,6 +38,7 @@ gem 'uglifier', '>= 1.3.0'
 
 # for bootstrap
 gem 'bootstrap-sass'
+
 gem 'coffee-script-source', '~> 1.11', '>= 1.11.1'
 
 # Use CoffeeScript for .coffee assets and views
